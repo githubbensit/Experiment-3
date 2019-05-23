@@ -1,0 +1,56 @@
+//using DEV-C++
+// Experiment 3 Problem 1
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+	double list[10];
+	int a,b;
+	double total, largestInt, smallestInt, average;
+	
+	cout << "Enter 10 integers: " << endl;
+	
+	for (a = 0; a < 10; a++)
+		list[a] = 0.0;
+		
+	for (a = 0; a < 10; a++)
+		cin >> list [a];
+		cout << "" << endl;
+		cout << "You entered the following 10 integers:" << endl;
+		
+	for (a = 0; a < 10; a++)
+		
+		cout  <<list[a] << endl;
+	
+	total = 0;
+	for (a = 0; a < 10; a++)
+		total  = total + list[a];
+		cout << "" << endl;
+		cout << "The total is: "<< total << endl;
+		average = total/10;
+		cout << "" << endl;
+		cout << "The Average is: "<< average << endl;
+				
+	b = 0;
+	for	(a = 1; a < 10; a++)
+		if (list[b] < list[a] )
+		b = a;
+	largestInt = list[b];
+	cout << "" << endl;
+	cout << "The largest Integer is: " << largestInt << endl;
+	
+	b = 0;
+		for	(a = 1; a < 10; a++)
+		if (list[b] > list[a] )
+		b = a;
+	smallestInt = list[b];
+	cout << "" << endl;
+	cout << "The smallest Integer is: " << smallestInt << endl;
+	
+
+	
+return 0;
+
+}

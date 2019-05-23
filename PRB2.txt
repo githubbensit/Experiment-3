@@ -1,0 +1,69 @@
+//Using Dev-C++
+//Problem 2 Experiment3
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void a(int* ProvinceA, int* ProvinceB, int* ProvinceC)
+
+{
+	cout << " Please Input temperatures in 7 days for Province A" <<endl;
+	cout <<""<< endl;
+	for (int x = 1; x <= 7; ++x)
+{
+		cout << "Province A, Day " << x << ":";
+		cin >> ProvinceA[x];
+		
+}
+		cout << "" << endl;
+		cout <<"Thank you Please Input another for Province B" << endl;
+	for (int x = 1; x <= 7; ++x)
+	
+{
+		cout << "Province B, Day " << x << ":";
+		cin >> ProvinceB[x];
+		
+}
+		cout << "" << endl;
+		cout <<"Thank you Please Input another for Province C" << endl;
+	for (int x = 1; x <= 7; ++x)
+	
+{
+		cout << "Province C, Day " << x << ":";
+		cin >> ProvinceC[x];
+}
+	
+	
+}
+
+void b(int* ProvinceA, int* ProvinceB, int* ProvinceC)
+{
+		cout <<""<< endl;
+	for (int x = 1; x <= 7; ++x)
+{
+		cout << "Province A, Day " << x << "=" << ProvinceA[x] << endl;
+}
+		cout <<"---------------------"<< endl;
+	for (int x = 1; x <= 7; ++x)
+{
+		cout << "Province B, Day " << x << "=" << ProvinceB[x] << endl;
+}
+		cout <<"---------------------"<< endl;
+	for (int x = 1; x <= 7; ++x)
+{
+		cout << "Province C, Day " << x << "=" << ProvinceC[x] << endl;
+}
+}
+	int main() 
+{
+	int ProvinceA[7], ProvinceB[7], ProvinceC[7];
+	
+	a(ProvinceA, ProvinceB, ProvinceC);
+	
+	cout << '\n' << "The temperature are the following for Province A, Province B, Province C:" << endl;
+	b(ProvinceA, ProvinceB, ProvinceC);
+	
+	cin.get();
+	cin.get();
+}
